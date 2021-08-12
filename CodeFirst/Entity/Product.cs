@@ -16,6 +16,7 @@ namespace CodeFirst.Entity
         public string ProductBrand { get; set; }
         public string ProductCategory { get; set; }
         public string ProductStock { get; set; }
-        public string ProductDetails { get; set; }
+        public string Details { get; set; }
+        public Category Category { get; set; }
     }
 }

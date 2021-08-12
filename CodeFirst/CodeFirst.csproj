@@ -56,7 +56,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Category.cs" />
     <Compile Include="Entity\Context.cs" />
+    <Compile Include="Entity\Customer.cs" />
     <Compile Include="Entity\Product.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -64,10 +66,53 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202108112020192_InitialCreate.cs" />
+    <Compile Include="Migrations\202108112020192_InitialCreate.Designer.cs">
+      <DependentUpon>202108112020192_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108112317113_CreateCustomersTable.cs" />
+    <Compile Include="Migrations\202108112317113_CreateCustomersTable.designer.cs">
+      <DependentUpon>202108112317113_CreateCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108112320418_CreateCityColumnInCustomersTable.cs" />
+    <Compile Include="Migrations\202108112320418_CreateCityColumnInCustomersTable.designer.cs">
+      <DependentUpon>202108112320418_CreateCityColumnInCustomersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108112325279_RenameCustomerTitleInCustomers.cs" />
+    <Compile Include="Migrations\202108112325279_RenameCustomerTitleInCustomers.designer.cs">
+      <DependentUpon>202108112325279_RenameCustomerTitleInCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108112331469_CreateCategoryDetailsColumnInCategory.cs" />
+    <Compile Include="Migrations\202108112331469_CreateCategoryDetailsColumnInCategory.designer.cs">
+      <DependentUpon>202108112331469_CreateCategoryDetailsColumnInCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202108112335330_RenameCategoryDetailsToCategoryDetailInCategoriesTable.cs" />
+    <Compile Include="Migrations\202108112335330_RenameCategoryDetailsToCategoryDetailInCategoriesTable.designer.cs">
+      <DependentUpon>202108112335330_RenameCategoryDetailsToCategoryDetailInCategoriesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108112020192_InitialCreate.resx">
+      <DependentUpon>202108112020192_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108112317113_CreateCustomersTable.resx">
+      <DependentUpon>202108112317113_CreateCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108112320418_CreateCityColumnInCustomersTable.resx">
+      <DependentUpon>202108112320418_CreateCityColumnInCustomersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108112325279_RenameCustomerTitleInCustomers.resx">
+      <DependentUpon>202108112325279_RenameCustomerTitleInCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108112331469_CreateCategoryDetailsColumnInCategory.resx">
+      <DependentUpon>202108112331469_CreateCategoryDetailsColumnInCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202108112335330_RenameCategoryDetailsToCategoryDetailInCategoriesTable.resx">
+      <DependentUpon>202108112335330_RenameCategoryDetailsToCategoryDetailInCategoriesTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,6 +123,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="NOTES\Var Olan Tablodaki işlemler.docx" />
+    <None Include="NOTES\İlişkisel veri tabanı.docx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
